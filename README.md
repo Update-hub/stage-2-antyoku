@@ -1,4 +1,4 @@
-# Sting
+# Stage-2
 
 ## Getting Started
 
