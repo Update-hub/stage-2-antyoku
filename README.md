@@ -1,11 +1,14 @@
 # Sting
 
-## Quickstart
+## Getting Started
 
 ```bash
-git clone https://github.com/Update-hub/sting.git
-cd sting
+git clone <自分のリポジトリ>
+cd <自分のプロジェクトディレクトリ>
 yarn install
 gulp
 ```
 
+## Deploy
+
+https://docs.update.jp/document/basic/git#github-pages
