@@ -1,0 +1,25 @@
+.hero {
+  height: 352px;
+  display: flex; // background-image: url('');
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+  @include pc () {
+    height: 718px;
+  }
+  &__title {
+    color: #FFFFFF;
+    text-shadow: 0 3px 6px rgba(255, 255, 255, 0.8);
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+    line-height: 1;
+    padding: 24.01px 27px 18px;
+    border: 4px solid #FFFFFF;
+    @include pc () {
+      font-size: 50px;
+      padding: 31px;
+      border: 8px solid #FFFFFF;
+    }
+  }
+}
