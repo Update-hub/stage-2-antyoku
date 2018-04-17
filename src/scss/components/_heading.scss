@@ -1,0 +1,22 @@
+.heading {
+  display: inline-block;
+  text-align: center;
+  &__english {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 37px;
+    padding: 0 32px;
+  }
+  &__japanese {
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+  &__border {
+    border-bottom: 5px solid;
+    border-image: linear-gradient(90deg, #31ABE2 20%, #572862 70%);
+    border-image-slice: 1;
+  }
+}
