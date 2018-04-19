@@ -52,7 +52,8 @@ gulp.task('js', () => {
           query: {
             presets: ['es2015'],
           },
-        }, ],
+        },
+       ],
       },
       output: {
         filename: 'script.js',
@@ -92,7 +93,7 @@ gulp.task('create-blank-pages', () => {
           }))
           .pipe(rename(page.path))
           .pipe(gulp.dest('./src/pug/pages', {
-            overwrite: false
+            overwrite: false,
           }));
       });
     });
