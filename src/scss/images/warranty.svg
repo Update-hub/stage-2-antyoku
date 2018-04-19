@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.066 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f6916d;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #d1d3d4;
+      }
+
+      .cls-4 {
+        fill: #1f425d;
+      }
+    </style>
+  </defs>
+  <g id="グループ化_90" data-name="グループ化 90" transform="translate(-941.2 -1007)">
+    <g id="グループ化_76" data-name="グループ化 76" transform="translate(-703 411)">
+      <path id="パス_591" data-name="パス 591" class="cls-1" d="M150.845,248.4H85.821a6,6,0,0,1-6.021-6.021V154.421a6,6,0,0,1,6.021-6.021h65.025a6,6,0,0,1,6.021,6.021v87.958A6.074,6.074,0,0,1,150.845,248.4Z" transform="translate(1564.4 447.6)"/>
+      <path id="パス_592" data-name="パス 592" class="cls-2" d="M140.142,247.47H91.1V158.8h64.7v73.016Z" transform="translate(1559.285 442.892)"/>
+      <path id="パス_593" data-name="パス 593" class="cls-3" d="M106.9,204.4h47.455v1.751H106.9Z" transform="translate(1552.133 422.251)"/>
+      <path id="パス_594" data-name="パス 594" class="cls-3" d="M106.9,226.9h47.455v1.751H106.9Z" transform="translate(1552.133 412.067)"/>
+      <path id="パス_595" data-name="パス 595" class="cls-3" d="M106.9,249.4h47.455v1.752H106.9Z" transform="translate(1552.133 401.882)"/>
+      <path id="パス_596" data-name="パス 596" class="cls-3" d="M106.9,272h23.426v1.752H106.9Z" transform="translate(1552.133 391.652)"/>
+      <path id="パス_597" data-name="パス 597" class="cls-3" d="M180.7,292.2h15.654L180.7,307.854Z" transform="translate(1518.727 382.508)"/>
+      <path id="パス_598" data-name="パス 598" class="cls-4" d="M150.741,161.263H125.125a2.02,2.02,0,0,1-2.025-2.025V148.4h29.611v10.837A1.942,1.942,0,0,1,150.741,161.263Z" transform="translate(1544.8 447.6)"/>
+      <path id="パス_599" data-name="パス 599" class="cls-3" d="M135.365,158.933a1.533,1.533,0,1,1-1.533-1.533A1.533,1.533,0,0,1,135.365,158.933Z" transform="translate(1540.636 443.526)"/>
+      <path id="パス_600" data-name="パス 600" class="cls-3" d="M164.565,158.933a1.533,1.533,0,1,1-1.533-1.533A1.533,1.533,0,0,1,164.565,158.933Z" transform="translate(1527.418 443.526)"/>
+    </g>
+  </g>
+</svg>

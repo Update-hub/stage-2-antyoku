@@ -1,0 +1,15 @@
+<svg id="ic_menu_black_24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="パス_602" data-name="パス 602" class="cls-1" d="M0,0H24V24H0Z"/>
+  <path id="パス_603" data-name="パス 603" class="cls-2" d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z"/>
+</svg>
