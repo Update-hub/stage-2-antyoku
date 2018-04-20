@@ -45,16 +45,15 @@ gulp.task('js', () => {
   return gulp.src('./src/js/entry.js')
     .pipe(webpack({
       module: {
-        loaders: [
-          {
-            test: /\.js$/,
-            exclude: /node_modules/,
-            loader: 'babel-loader',
-            query: {
-              presets: ['es2015'],
-            },
+        loaders: [{
+          test: /\.js$/,
+          exclude: /node_modules/,
+          loader: 'babel-loader',
+          query: {
+            presets: ['es2015'],
           },
-        ],
+        },
+       ],
       },
       output: {
         filename: 'script.js',
@@ -63,13 +62,18 @@ gulp.task('js', () => {
     .pipe(gulp.dest('dist/'));
 });
 
+gulp.task('image-copy', () =>
+  gulp.src('./src/images/**/*')
+  .pipe(gulp.dest('dist/imgs'))
+);
+
 gulp.task('image', () =>
   gulp.src('./src/images/**/*')
-    .pipe(cache(imagemin({
-      progressive: true,
-      interlaced: true,
-    })))
-    .pipe(gulp.dest('dist/imgs'))
+  .pipe(cache(imagemin({
+    progressive: true,
+    interlaced: true,
+  })))
+  .pipe(gulp.dest('dist/imgs'))
 );
 
 gulp.task('create-blank-pages', () => {
@@ -88,7 +92,9 @@ gulp.task('create-blank-pages', () => {
             title: page.title,
           }))
           .pipe(rename(page.path))
-          .pipe(gulp.dest('./src/pug/pages', {overwrite: false}));
+          .pipe(gulp.dest('./src/pug/pages', {
+            overwrite: false,
+          }));
       });
     });
 });
@@ -121,7 +127,7 @@ gulp.task('watch', ['build'], () => {
     gulp.start('pug');
   });
   watch('./src/images/**/*', () => {
-    gulp.start('image');
+    gulp.start('image-copy');
   });
   watch('./src/js/**/*.js', () => {
     gulp.start('js');
@@ -141,5 +147,6 @@ gulp.task('serve', ['watch'], () => {
   });
 });
 
-gulp.task('build', ['pug', 'sass', 'js', 'image', 'favicon']);
+gulp.task('build', ['pug', 'sass', 'js', 'image-copy']);
+gulp.task('release', ['build', 'image', 'favicon']);
 gulp.task('default', ['serve']);
