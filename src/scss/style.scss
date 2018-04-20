@@ -4,12 +4,12 @@
 @import "lib/mixins";
 @import "lib/reset";
 @import "lib/init";
+@import "lib/common";
 
 @import "layouts/grid";
 @import "layouts/container";
 @import "layouts/header";
 @import "layouts/footer";
-@import "layouts/common";
 
 @import "components/hero";
 @import "components/heading";
