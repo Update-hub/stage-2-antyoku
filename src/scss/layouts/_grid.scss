@@ -1,0 +1,16 @@
+@include pc() {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px;
+  }
+  .col {
+    padding: 16px;
+    box-sizing: border-box;
+  }
+  @for $i from 1 through 12 {
+    .col--#{$i} {
+      @include column($i);
+    }
+  }
+}
