@@ -3,3 +3,7 @@
     @content;
   }
 }
+
+@mixin column($col) {
+  flex-basis: calc(#{$col} / 12 * 100%);
+}
