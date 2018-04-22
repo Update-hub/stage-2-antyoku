@@ -1,1 +1,1 @@
-// import sample from './sample';
+// import sample from './template';
