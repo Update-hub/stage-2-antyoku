@@ -2,6 +2,7 @@ mixin popular-card(cardImg, cardName, cardCap, cardTags, cardPrice)
   .col.col--4
     .card
       img(src=cardImg).card__img
+      .card__heart
       .card__text-area
         .card__name #{cardName}
         .card__caption #{cardCap}
