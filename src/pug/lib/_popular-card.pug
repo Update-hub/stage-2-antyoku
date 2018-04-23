@@ -10,4 +10,4 @@ mixin popular-card(cardImg, cardName, cardCap, cardTags, cardPrice)
             span.card__tags #{i}
         .card__footer
           .card__price #{cardPrice}
-          .card__add-cart カートに追加
+          +button("カートに追加")
