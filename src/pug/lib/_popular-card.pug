@@ -1,11 +1,13 @@
 mixin popular-card(cardImg, cardName, cardCap, cardTags, cardPrice)
+  .col.col--4
     .card
       img(src=cardImg).card__img
       .card__text-area
         .card__name #{cardName}
         .card__caption #{cardCap}
-        ul.card__tags
+        .card__tags-area
           each i in cardTags
-            span #{i}
-        .card__price #{cardPrice}
-        .card__add-cart カートに入れる
+            span.card__tags #{i}
+        .card__footer
+          .card__price #{cardPrice}
+          .card__add-cart カートに追加
