@@ -1,7 +1,7 @@
 mixin popular-card(cardImg, cardName, cardCap, cardTags, cardPrice)
   .col.col--4
     .card
-      img(src=cardImg).card__img
+      div(class="card__img" class=cardImg)
       .card__heart
       .card__text-area
         .card__name #{cardName}
@@ -11,4 +11,6 @@ mixin popular-card(cardImg, cardName, cardCap, cardTags, cardPrice)
             span.card__tags #{i}
         .card__footer
           .card__price #{cardPrice}
-          .button.button-addcart カートに追加
+          .button.button-addcart
+            i.material-icons-cart shopping_cart
+            |  カートに追加
