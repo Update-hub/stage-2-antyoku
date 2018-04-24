@@ -1,9 +1,8 @@
 .container {
   margin: 0 auto;
   @include pc {
-    width: 1004px;
-    padding: 0 16px;
     max-width: 1004px;
+    padding: 0 16px;
     margin: 0 auto;
   }
 }
