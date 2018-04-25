@@ -1,14 +1,16 @@
 extends /layouts/_base
 
 block variables
-  - title = '<%= title %>'
+  title = '<%= title %>'
 
 block content
 
   //- Sample Content
   include /layouts/_hero
   section.section.section--white
+    include /layouts/_feature
   section.section.section--gray
+    include /layouts/_popular
   section.section--limited
   section.section.section--gray.section--media
     include /layouts/_media

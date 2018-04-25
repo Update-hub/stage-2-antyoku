@@ -1,12 +1,17 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css?family=Righteous');
 @import "lib/variables";
 @import "lib/mixins";
 @import "lib/reset";
 @import "lib/init";
+@import "lib/common";
 
 @import "layouts/grid";
 @import "layouts/container";
 @import "layouts/header";
+@import "layouts/popular";
 @import "layouts/footer";
+@import "layouts/feature";
 
 @import "components/hero";
 @import "components/heading";
@@ -14,3 +19,4 @@
 @import "components/button";
 @import "components/section";
 @import "components/media";
+@import "components/card";
