@@ -1,12 +1,14 @@
 .feature {
   text-align: center;
-  padding: 40px 0 32px;
-  &:last-child {
-    padding: 40px 0 0;
-  }
+  padding: 40px 20px 32px;
   @include pc() {
     max-width: 324px;
-    &:last-child {
+    padding: 56px 22px 48px;
+  }
+  &--last {
+    padding: 40px 20px 0;
+    @include pc() {
+      max-width: 324px;
       padding: 56px 22px 48px;
     }
   }
