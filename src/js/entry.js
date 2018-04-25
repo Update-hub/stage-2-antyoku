@@ -1,1 +1,3 @@
-// import sample from './sample';
+// import sample from './template';
+
+import './favorite-btn';
