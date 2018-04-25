@@ -1,0 +1,66 @@
+.heading+.container.media {
+  margin-top: 43px;
+}
+
+.container.media+.container.media {
+  margin-top: 16px;
+}
+
+.container.media {
+  background: #FFF;
+}
+
+.media__fig iframe {
+  width: 320px;
+  height: 180px;
+  vertical-align: bottom;
+}
+
+.media__text {
+  h3 {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 16px;
+    text-align: center;
+  }
+  p {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 16px;
+  }
+}
+
+@include pc {
+  .heading+.container.media {
+    margin-top: 48px;
+  }
+  .container.media+.container.media {
+    margin-top: 32px;
+  }
+  .container.media {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 278px;
+    border: 1px solid #DDDDDD;
+  }
+  .media__fig iframe {
+    width: 494px;
+    height: 278px;
+  }
+  .media__text {
+    margin: 88px 32px;
+    h3 {
+      font-size: 20px;
+      line-height: 29px;
+      padding: 0;
+      text-align: left;
+    }
+    p {
+      font-size: 13px;
+      line-height: 19px;
+      padding: 0;
+      margin-top: 16px;
+    }
+  }
+}
