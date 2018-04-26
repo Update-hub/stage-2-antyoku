@@ -46,21 +46,28 @@ header {
     }
   }
   .header__bars-sp {
-    display: inline-block;
-    color: #fff;
-    width: 18px;
-    height: 12px;
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
     line-height: 20px;
-    padding-bottom: 3px;
+    text-align: center;
     @include pc() {
       display: none;
     }
   }
-}
-
-.fa-bars {
-  width: 18px;
-  height: 12px;
+  .material-icons-bars {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+    line-height: 24px;
+    text-transform: none;
+    margin: auto;
+  }
 }
 
 .btn-menu-sp {
@@ -112,7 +119,7 @@ header {
 
 .btn-menu-sp:checked {
   &~.sidemenu {
-    width: 200px;
+    width: 160px;
   }
   &~.overlay {
     display: block;
