@@ -11,7 +11,7 @@
 }
 
 .media__fig iframe {
-  width: 320px;
+  width: 100%;
   height: 180px;
   vertical-align: bottom;
 }
@@ -41,12 +41,14 @@
     display: flex;
     align-items: center;
     padding: 0;
-    height: 278px;
     border: 1px solid #DDDDDD;
   }
-  .media__fig iframe {
-    width: 494px;
+  .media__fig {
     height: 278px;
+    iframe {
+      width: 494px;
+      height: 278px;
+    }
   }
   .media__text {
     margin: 88px 32px;
@@ -58,6 +60,7 @@
     }
     p {
       font-size: 13px;
+      font-weight: lighter;
       line-height: 19px;
       padding: 0;
       margin-top: 16px;
