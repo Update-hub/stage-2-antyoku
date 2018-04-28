@@ -1,0 +1,86 @@
+.carousel {
+  display: flex;
+  color: #FFF;
+  overflow: hidden;
+  text-align: center;
+  align-items: flex-end;
+  &__slide-content {
+    margin-top: 170px;
+    height: 332px;
+    padding-top: 64px;
+    background-image: linear-gradient(180deg, #fff0 0, #000 100%);
+    @include pc () {
+      margin-top: 470px;
+      padding-top: 0;
+    }
+  }
+  &__title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    font-weight: 400;
+    line-height: 29px;
+  }
+  &__text {
+    font-size: 13px;
+    font-weight: 100;
+    margin-bottom: 16px;
+    padding: 0 32px;
+    line-height: 19px;
+    text-align: left;
+    @include pc () {
+      text-align: center;
+    }
+  }
+  &__price {
+    font-size: 15px;
+    font-weight: 100;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+  &__slide-1 {
+    background: url(/imgs/carousel/slide-1.jpg) no-repeat center/cover;
+  }
+  &__slide-2 {
+    background: url(/imgs/carousel/slide-2.jpg) no-repeat center/cover;
+  }
+  &__slide-3 {
+    background: url(/imgs/carousel/slide-3.jpg) no-repeat center/cover;
+  }
+  &__slide-4 {
+    background: url(/imgs/carousel/slide-4.jpg) no-repeat center/cover;
+  }
+  &__button-addcart {
+    border: 1px solid #fff;
+    width: 132px;
+    margin: auto;
+  }
+}
+
+.slick-slider {
+  height: 504px;
+  margin-bottom: 0px;
+  @include pc () {
+    height: 726px;
+  }
+}
+
+.slick-dots {
+  bottom: 24px;
+  @include pc () {
+    bottom: 40px;
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0px;
+}
+
+.slick-dots li button:before {
+  opacity: .50;
+  color: #fff;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fff;
+}

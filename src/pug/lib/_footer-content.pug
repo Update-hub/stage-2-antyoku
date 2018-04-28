@@ -1,0 +1,5 @@
+mixin footer(title, ...items)
+  h3.footer__title= title
+  ul.footer__contents
+    each item in items
+      li.footer__content= item
