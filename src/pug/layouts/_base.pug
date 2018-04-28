@@ -22,6 +22,7 @@ html(lang='ja')
     include /lib/_popular-card
     include /lib/_media-content
     include /lib/_footer-content
+    include /lib/_carousel-content
 
     include /layouts/_header
 
@@ -31,6 +32,6 @@ html(lang='ja')
 
     if jquery
       script(src='//code.jquery.com/jquery-3.3.1.slim.js')
-
+    script(src='//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js')
     script(src='/script.js')
     block script

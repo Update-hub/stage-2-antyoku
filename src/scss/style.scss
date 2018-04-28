@@ -1,5 +1,7 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url(//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css);
+@import url(//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css);
 @import "lib/variables";
 @import "lib/mixins";
 @import "lib/reset";
@@ -13,6 +15,7 @@
 @import "layouts/footer";
 @import "layouts/feature";
 @import "layouts/media";
+@import "layouts/carousel";
 
 
 @import "components/hero";
