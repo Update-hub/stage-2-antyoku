@@ -1,0 +1,140 @@
+header {
+  width: 100%;
+  height: 52px;
+  position: absolute;
+  background: rgba(0, 0, 0, .6);
+  .header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    color: #fff;
+    line-height: 25px;
+    width: 100%;
+    height: 100%;
+    @include pc() {
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+    &>:first-child {
+      @include pc() {
+        margin-right: auto;
+      }
+    }
+    &-logo {
+      font-family: 'Righteous', cursive;
+      font-size: 16px;
+      @include pc() {
+        font-size: 20px;
+      }
+      &:link {
+        color: #fff;
+        text-decoration: none;
+      }
+      &:visited {
+        color: #fff;
+      }
+    }
+    &-item {
+      display: none;
+      @include pc() {
+        display: block;
+        cursor: pointer;
+        font-size: 13px;
+        margin-left: 24px;
+      }
+    }
+  }
+  .header__bars-sp {
+    position: absolute;
+    top: 14px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    line-height: 20px;
+    text-align: center;
+    @include pc() {
+      display: none;
+    }
+  }
+  .material-icons-bars {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    color: #fff;
+    display: inline-block;
+    line-height: 24px;
+    text-transform: none;
+    margin: auto;
+  }
+}
+
+.btn-menu-sp {
+  display: none;
+}
+
+.sidemenu__nav-logo-sp {
+  color: #111;
+  font-family: 'Righteous', cursive;
+  font-size: 16px;
+  line-height: 25px;
+  border-bottom: 1px solid #DDD;
+  padding: 16px;
+}
+
+.sidemenu__nav-item-sp {
+  font-size: 13px;
+  line-height: 25px;
+  padding: 0 16px;
+  margin: 16px 0;
+}
+
+.sidemenu {
+  z-index: 2;
+  position: absolute;
+  background: #fff;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @include pc() {
+    display: none;
+  }
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  background: rgba(0, 0, 0, .6);
+  width: 100%;
+  height: 100%;
+}
+
+.btn-menu-sp:checked {
+  &~.sidemenu {
+    width: 160px;
+  }
+  &~.overlay {
+    display: block;
+    @include pc() {
+      display: none;
+    }
+  }
+}
+
+.logo-sp-font {
+  &:link {
+    color: #111;
+    text-decoration: none;
+  }
+  &:visited {
+    color: #111;
+  }
+}
