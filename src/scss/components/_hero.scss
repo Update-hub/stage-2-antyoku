@@ -1,7 +1,7 @@
 .hero {
   height: 352px;
   display: flex;
-  background: url(/imgs/heroBg.png) no-repeat center/cover;
+  background: url(./imgs/heroBg.png) no-repeat center/cover;
   align-items: center;
   justify-content: center;
   @include pc () {
