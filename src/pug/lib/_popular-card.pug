@@ -1,10 +1,10 @@
 mixin popular-card(cardImg, cardName, cardCap, cardTags, cardPrice)
   .col.col--4
     .card
-      div(class="card__img" class=cardImg)
+      div(class='card__img' class=cardImg)
       .card__heart
       .card__text-area
-        .card__name #{cardName}
+        h2.card__name #{cardName}
         .card__caption #{cardCap}
         .card__tags-area
           each i in cardTags
