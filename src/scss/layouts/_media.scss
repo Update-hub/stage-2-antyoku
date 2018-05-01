@@ -10,20 +10,21 @@
   background: #FFF;
 }
 
-.media__fig iframe {
-  width: 100%;
-  height: 180px;
-  vertical-align: bottom;
-}
-
-.media__text {
-  h3 {
+.media {
+  &__fig {
+    iframe {
+      width: 100%;
+      height: 180px;
+      vertical-align: bottom;
+    }
+  }
+  &__title {
     font-size: 16px;
     line-height: 24px;
     padding-top: 16px;
     text-align: center;
   }
-  p {
+  &__text {
     font-size: 12px;
     font-weight: 300;
     line-height: 18px;
@@ -44,22 +45,24 @@
     padding: 0;
     border: 1px solid #DDDDDD;
   }
-  .media__fig {
-    height: 278px;
-    iframe {
-      width: 494px;
+  .media {
+    &__fig {
       height: 278px;
+      iframe {
+        width: 494px;
+        height: 278px;
+      }
     }
-  }
-  .media__text {
-    margin: 88px 32px;
-    h3 {
+    &__caption {
+      margin: 88px 32px;
+    }
+    &__title {
       font-size: 20px;
       line-height: 29px;
       padding: 0;
       text-align: left;
     }
-    p {
+    &__text {
       font-size: 13px;
       line-height: 19px;
       padding: 0;
