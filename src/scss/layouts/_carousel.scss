@@ -7,7 +7,7 @@
     margin-top: 170px;
     height: 332px;
     padding-top: 64px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0) ,rgb(0, 0, 0));
+    background-image: linear-gradient(rgba(0, 0, 0, 0) ,rgb(0, 0, 0));
     @include pc () {
       margin-top: 470px;
       padding-top: 0;
@@ -21,7 +21,7 @@
   }
   &__text {
     font-size: 13px;
-    font-weight: 100;
+    font-weight: 300;
     margin-bottom: 16px;
     padding: 0 32px;
     line-height: 19px;
@@ -32,7 +32,7 @@
   }
   &__price {
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     line-height: 22px;
     margin-bottom: 16px;
   }
