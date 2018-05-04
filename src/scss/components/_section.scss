@@ -11,11 +11,3 @@
     background: #fafafa;
   }
 }
-.section--limited {
-  background: none;
-  //background: url(/imgs/xxxx.jpg) center/cover;
-  padding: 232px 0 24px 0;
-  @include pc() {
-    padding: 472px 0 40px 0;
-  }
-}
