@@ -1,4 +1,5 @@
 .heading {
+  position: relative;
   display: inline-block;
   text-align: center;
   &__wrap {
@@ -33,8 +34,14 @@
       margin-bottom: 16px;
     }
   }
-  &__border {
-    border-bottom: 5px solid;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-bottom: 4px solid;
     border-image: linear-gradient(90deg, #31ABE2 20%, #572862 70%);
     border-image-slice: 1;
   }
