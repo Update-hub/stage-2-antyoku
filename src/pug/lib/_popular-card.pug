@@ -2,15 +2,15 @@ mixin popular-card(cardImg, cardName, cardCap, cardTags, cardPrice)
   .col.col--4
     .card
       .card__img(class=cardImg)
-      .card__heart
+      a.card__heart
       .card__text-area
         h2.card__name #{cardName}
-        .card__caption #{cardCap}
+        p.card__caption #{cardCap}
         .card__tags-area
           each i in cardTags
             span.card__tags #{i}
         .card__footer
-          .card__price #{cardPrice}
-          .button.button-addcart
+          p.card__price #{cardPrice}
+          a.button.button-addcart
             i.material-icons-cart shopping_cart
             |  カートに追加
