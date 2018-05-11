@@ -2,6 +2,6 @@ mixin carousel(title, text, price)
   h2.carousel__title #{title}
   p.carousel__text #{text}
   p.carousel__price #{price}
-  .button.carousel__button-addcart
+  a(class="button carousel__button-addcart" href="#")
     img.cart-img(src='./imgs/shopping_cart.svg' alt='')
     |  カートに追加
