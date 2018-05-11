@@ -1,12 +1,12 @@
-.heading+.container.media {
+.heading+.media {
   margin-top: 43px;
 }
 
-.container.media+.container.media {
+.media+.media {
   margin-top: 16px;
 }
 
-.container.media {
+.media {
   background: #FFF;
 }
 
@@ -33,19 +33,17 @@
 }
 
 @include pc {
-  .heading+.container.media {
+  .heading+.media {
     margin-top: 48px;
   }
-  .container.media+.container.media {
+  .media+.media {
     margin-top: 32px;
   }
-  .container.media {
+  .media {
     display: flex;
     align-items: center;
     padding: 0;
     border: 1px solid #DDDDDD;
-  }
-  .media {
     &__fig {
       height: 278px;
       iframe {
@@ -70,3 +68,4 @@
     }
   }
 }
+
