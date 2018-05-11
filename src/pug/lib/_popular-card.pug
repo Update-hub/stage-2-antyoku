@@ -10,7 +10,6 @@ mixin popular-card(cardImg, cardName, cardCap, cardTags, cardPrice)
           each i in cardTags
             span.card__tags #{i}
         .card__footer
-          p.card__price #{cardPrice}
+          .card__price #{cardPrice}
           a.button.button-addcart
-            i.material-icons-cart shopping_cart
-            |  カートに追加
+            img.cart-img(src='./imgs/shopping_cart.svg' alt='')
