@@ -1,25 +1,21 @@
-@import url(//fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjp.css');
 @import url('https://fonts.googleapis.com/css?family=Righteous');
-@import url(//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css);
-@import url(//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css);
-@import "lib/variables";
+@import url('https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css');
+@import url('https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css');
+
 @import "lib/mixins";
 @import "lib/reset";
-@import "lib/init";
 @import "lib/common";
 
 @import "layouts/grid";
 @import "layouts/container";
 @import "layouts/header";
-@import "layouts/popular";
 @import "layouts/footer";
 @import "layouts/media";
 @import "layouts/carousel";
 
-
 @import "components/hero";
 @import "components/heading";
-@import "components/table";
 @import "components/button";
 @import "components/section";
 @import "components/card";
