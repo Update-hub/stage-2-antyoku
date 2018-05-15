@@ -26,11 +26,13 @@
     background: url(./imgs/eagle.jpg) center/cover;
   }
   &__heart:before {
+    cursor: pointer;
     font-family: "Font Awesome 5 Free";
     content: '\f004';
     color: #fff;
   }
   &__heart--clicked:before {
+    cursor: pointer;
     font-family: "Font Awesome 5 Free";
     content: '\f004';
     font-weight: 700;
@@ -68,6 +70,7 @@
     margin: 8px 0 24px 0;
   }
   &__tags {
+    cursor: pointer;
     display: inline-block;
     color: #CCC;
     border: 1px solid #CCC;
