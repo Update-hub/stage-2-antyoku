@@ -30,6 +30,7 @@
     font-family: "Font Awesome 5 Free";
     content: '\f004';
     color: #fff;
+    transition: all .6s;
   }
   &__heart--clicked:before {
     cursor: pointer;
