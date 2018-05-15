@@ -21,6 +21,13 @@
       color: #666666;
     }
   }
+  &__facebook {
+    display: inline-block;
+    margin-right: 40px;
+  }
+  &__twitter {
+    display: inline-block;
+  }
   &__source {
     font-size: 12px;
     line-height: 18px;
@@ -43,12 +50,11 @@
   &.fa-facebook {
     font-size: 32px;
     color: #3b579d;
-    margin-right: 40px;
   }
   &.fa-twitter {
     font-size: 20px;
     color: #1da1f2;
-    vertical-align: bottom;
+    vertical-align: super;
     padding: 6px;
   }
 }
@@ -64,7 +70,8 @@
     &__contents {
       text-align: left;
     }
-    .fab {
+    &__facebook,
+    &__twitter {
       margin-top: 40px;
     }
     &__source {
