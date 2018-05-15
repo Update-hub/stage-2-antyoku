@@ -5,7 +5,7 @@
   align-items: flex-end;
   &__slide-content {
     margin-top: 170px;
-    height: 332px;
+    height: 268px;
     padding-top: 64px;
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
     @include pc () {
@@ -62,14 +62,6 @@
 
 .slick-slide img {
   display: inline;
-}
-
-.slick-slider {
-  height: 504px;
-  margin-bottom: 0px;
-  @include pc () {
-    height: 726px;
-  }
 }
 
 .slick-dots {
