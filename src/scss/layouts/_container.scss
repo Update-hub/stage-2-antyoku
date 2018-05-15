@@ -8,10 +8,4 @@
   &--header {
     height: 100%;
   }
-  &__card-area {
-    margin-top: 40px;
-    @include pc() {
-      margin-top: 32px;
-    }
-  }
 }
