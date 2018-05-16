@@ -115,7 +115,7 @@ $('.overlay').on('click', function () {
 
 
 $('.card__heart').on('click', function (e) {
-  $(e.currentTarget).addClass('card__heart--clicked');
+  $(e.currentTarget).toggleClass('card__heart--clicked');
 });
 
 /***/ }),
