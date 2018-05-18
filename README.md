@@ -9,9 +9,9 @@ yarn install
 gulp
 ```
 
-## Deploy
+## Demo
 
-https://docs.update.jp/document/basic/git#github-pages
+https://update-hub.github.io/stage-2-antyoku/
 
 ## Docs
 
